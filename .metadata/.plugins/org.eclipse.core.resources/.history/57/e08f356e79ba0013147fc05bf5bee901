@@ -1,0 +1,24 @@
+package questionBank;
+
+public class Main {
+	public static void main(){
+		String s = "";
+		reverseWords(s);
+	}
+	
+    public static String reverseWords(String s) {
+        if(s == "" || s == null){
+        	return "";
+        }
+    	
+    	String[] ss = s.split(" ");
+        String reverseS = "";
+		for (int i = ss.length; i > 0; i--) {
+			reverseS = reverseS + ss[i-1];
+			if (i != 0) {
+				reverseS = reverseS + " ";
+			}
+		}
+		return reverseS;
+    }
+}

@@ -1,0 +1,14 @@
+package questionBank;
+
+public class Main {
+	public static void main(){
+		String s = System.in.toString();
+		String[] ss = s.split(" ");
+		for (int i = ss.length; i > 0; i--) {
+			System.out.println(ss [i-1]);
+			if (i != 0) {
+				System.out.println(" ");
+			}
+		}
+	}
+}
