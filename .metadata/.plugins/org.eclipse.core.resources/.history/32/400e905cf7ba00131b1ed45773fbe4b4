@@ -1,0 +1,16 @@
+package questionBank;
+
+import java.util.HashMap;
+import java.util.Scanner;
+
+public class P0403 {
+	public static void main(){
+		Scanner input = new Scanner(System.in);
+		HashMap data = new HashMap();
+		
+		int i = input.nextInt();
+		for( ; i > 0 ; i--){
+			
+		}
+	}
+}
