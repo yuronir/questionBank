@@ -55,17 +55,21 @@ public class P0404 {
     
     //연산자 판별
     public int operation(String operator, int a, int b){
+    	
+    	int result = 0;
+    	
     	if(operator.equals("+")){
-    		return a+b;
+    		result = a+b;
     	} else if(operator.equals("-")){
-    		return a-b;
+    		result = a-b;
     	} else if(operator.equals("*")){
-    		return a*b;
+    		result = a*b;
     	} else if(operator.equals("/")){
-    		return a/b;
+    		result = a/b;
     	} else {
     		System.out.println("operation failed!");
-    		return 0;
     	}
+    	
+    	return result;
     }
 }
