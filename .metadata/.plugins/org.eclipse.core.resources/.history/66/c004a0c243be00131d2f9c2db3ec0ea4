@@ -12,7 +12,16 @@ public class P0407 {
 		double d;
 		Scanner input = new Scanner(System.in);
 		int count = input.nextInt();
-
+		
+//		temp = new int[count][6];
+//		
+//		//각 회차의 정보를 저장
+//		for(int i = 0 ; i < count ; i++){
+//			for(int j = 0; j < 6; j++){
+//				temp[i][j] = input.nextInt();
+//			}
+//		}
+		
 		for(int i = 0; i < count; i++){
 			
 			int result = -2;
@@ -27,8 +36,6 @@ public class P0407 {
 				r2 = ttemp;
 			} //r1이 r2보다 크거나 같게 만들고 연산을 시작한다.
 			
-
-			//판별 시작
 			if(d == 0){
 				if(r1==r2){
 					result = -1;
@@ -60,7 +67,6 @@ public class P0407 {
 					result = 0;
 				}
 			}
-			//판별 끝
 			
 			System.out.println(result);
 		}
