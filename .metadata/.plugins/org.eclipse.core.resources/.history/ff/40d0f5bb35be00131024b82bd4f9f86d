@@ -1,0 +1,33 @@
+package questionBank;
+
+import java.util.HashMap;
+import java.util.Scanner;
+
+/*
+ * https://www.acmicpc.net/problem/1002
+ * 두 터렛의 좌표와 각각에서의 거리가 주어질 때 나올 수 있는 가짓수 구하기 
+ */
+public class P0505 {
+	public static void main(String[] args){
+		int x1, x2, y1, y2, r1, r2;
+		double d;
+		HashMap data = new HashMap();
+		String[] temp;
+		int[] temp2 = new int[6];
+		Scanner input = new Scanner(System.in);
+		int count = input.nextInt();
+		
+		for(int i = 0 ; i < count ; i++){
+			temp = input.next().split(" ");
+			for(int j = 0; j < temp.length; j++){
+				temp2[j] = Integer.parseInt(temp[j]);
+			}
+			data.put(i, temp2);
+		}
+		
+		for(int i = 0; i < count; i++){
+			temp2 = (int[]) data.get(i);
+			x1 = temp2[0];
+		}
+	}
+}
