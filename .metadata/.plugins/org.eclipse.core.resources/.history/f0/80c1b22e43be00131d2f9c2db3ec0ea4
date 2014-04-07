@@ -10,23 +10,23 @@ public class P0407 {
 	public static void main(String[] args){
 		int x1, x2, y1, y2, r1, r2;
 		double d;
+		int[][] temp;
 		Scanner input = new Scanner(System.in);
 		int count = input.nextInt();
+		temp = new int[count][6];
 		
-//		temp = new int[count][6];
-//		
-//		//각 회차의 정보를 저장
-//		for(int i = 0 ; i < count ; i++){
-//			for(int j = 0; j < 6; j++){
-//				temp[i][j] = input.nextInt();
-//			}
-//		}
+		//각 회차의 정보를 저장
+		for(int i = 0 ; i < count ; i++){
+			for(int j = 0; j < 6; j++){
+				temp[i][j] = input.nextInt();
+			}
+		}
 		
 		for(int i = 0; i < count; i++){
 			
 			int result = -2;
-			x1 = input.nextInt(); y1 = input.nextInt(); r1 = input.nextInt();
-			x2 = input.nextInt(); y2 = input.nextInt(); r2 = input.nextInt();
+			x1 = temp[i][0]; y1 = temp[i][1]; r1 = temp[i][2];
+			x2 = temp[i][3]; y2 = temp[i][4]; r2 = temp[i][5];
 			
 			d = Math.sqrt((Math.pow(x1-x2, 2) + Math.pow(y1-y2, 2)));
 
