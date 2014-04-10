@@ -2,6 +2,10 @@ package questionBank;
 
 import java.util.Scanner;
 
+/*
+ * https://www.acmicpc.net/problem/1924
+ * 2007년 1월 1일은 월요일이다. 2007년 x월 y일은 무슨 요일인가?
+ */
 public class P0409 {
 	public static void main(String[] args){
 		
