@@ -13,7 +13,6 @@ public class P0410 {
     public int reverse(int x) {
 
     	int sign = 1;
-    	int result;
     	if(x < 0) sign = -1;
     	
     	String temp = Math.abs(x) + "";
@@ -22,9 +21,7 @@ public class P0410 {
         for(int i = 0; i < temp.length(); i++){
         	ttemp[i] = temp.charAt(temp.length()-i-1);
         }
-    	
-        result = Integer.parseInt(String.valueOf(ttemp));
-        
-    	return sign * result;
+
+    	return sign * Integer.parseInt(String.valueOf(ttemp));
     }
 }
